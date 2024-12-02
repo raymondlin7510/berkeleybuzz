@@ -1,10 +1,10 @@
 import React from 'react';
-import '../styles/EventSearch.css';
+import '../styles/SearchPage.css';
 import SearchBar from '../components/SearchBar';
 import EventCard from '../components/EventCard';
 import OrgCard from '../components/OrgCard';
   
-const EventSearch = () => {
+const SearchPage = () => {
   return (
     <div className="wrapper">
       <img src="" />
@@ -25,4 +25,4 @@ const EventSearch = () => {
   );
 };
 
-export default EventSearch;
+export default SearchPage;

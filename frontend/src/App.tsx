@@ -2,7 +2,7 @@ import React from "react";
 import { Router, Route, Routes } from 'react-router-dom';
 
 import CalendarPage from "./pages/CalendarPage";
-import EventSearch from "./pages/EventSearch";
+import EventSearch from "./pages/SearchPage";
 import LoginPage from "./pages/LoginPage";
 
 const App = () => {
