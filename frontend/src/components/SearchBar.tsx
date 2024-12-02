@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/SearchBar.css';
-import magnify from '/magnify.png';
+import magnify from '../images/magnify.png';
 
 const SearchBar = () => {
     return (

@@ -13,12 +13,12 @@ interface EventCardProps {
   const EventCard: React.FC<EventCardProps> = ({ eventName, logo, background, location, time, orgName }) => {
     return (
       <div className="wrapper">
-        <img src={background} />
+        <img src={background} alt="Event Background" />
         <div className="textHolder">
             <div className="eventName">{eventName}</div>
             <div className="location">{location}</div>
             <div className="time">{time}</div>
-            <img src={logo} />
+            <img src={logo} alt="" />
             <div className="orgName">{orgName}</div>
         </div>
       </div>

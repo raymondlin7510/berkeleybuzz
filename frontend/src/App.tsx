@@ -1,5 +1,5 @@
 import React from "react";
-import { Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import CalendarPage from "./pages/CalendarPage";
 import EventSearch from "./pages/SearchPage";

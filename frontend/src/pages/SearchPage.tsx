@@ -3,11 +3,12 @@ import '../styles/SearchPage.css';
 import SearchBar from '../components/SearchBar';
 import EventCard from '../components/EventCard';
 import OrgCard from '../components/OrgCard';
+import logo from '../images/BerkeleyBuzzLogo.png';
   
 const SearchPage = () => {
   return (
     <div className="wrapper">
-      <img src="" />
+      <img src={logo} alt="logo" />
       <div className="backgroundImage">
           <div className="backgroundSearch">
               <SearchBar />
