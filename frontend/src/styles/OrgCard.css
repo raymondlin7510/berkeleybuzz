@@ -1,0 +1,15 @@
+.wrapper {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.wrapper img {
+    width: 25px;
+    height: auto;
+}
+
+.orgTitle {
+    font-size: 30px;
+}
