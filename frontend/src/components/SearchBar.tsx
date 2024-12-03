@@ -4,7 +4,7 @@ import magnify from '../images/magnify.png';
 
 const SearchBar = () => {
     return (
-      <div className="wrapper">
+      <div className="searchbar">
         <img src={magnify} className='search-icon' alt='Magnifying Glass Icon'/>
         <input
             type="text"

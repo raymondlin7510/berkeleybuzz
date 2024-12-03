@@ -8,8 +8,8 @@ interface OrgCardProps {
   
   const OrgCard: React.FC<OrgCardProps> = ({ logo, name }) => {
     return (
-      <div className="wrapper">
-        <img src={logo} alt="" />
+      <div className="orgWrapper">
+        <img src={logo} alt="organization logo" className="orgLogo"/>
         <h2 className="orgTitle">{name}</h2>
       </div>
     );

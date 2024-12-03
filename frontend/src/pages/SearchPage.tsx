@@ -4,23 +4,30 @@ import SearchBar from '../components/SearchBar';
 import EventCard from '../components/EventCard';
 import OrgCard from '../components/OrgCard';
 import logo from '../images/BerkeleyBuzzLogo.png';
+import sampleLogo from '../images/csmLogo.png';
+import sampleBackground from '../images/sample.png';
   
 const SearchPage = () => {
+  const findEvents = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log('hi');
+    //do whatever to handle the submit WARNING
+  }
+
+
   return (
-    <div className="wrapper">
-      <img src={logo} alt="logo" />
-      <div className="backgroundImage">
-          <div className="backgroundSearch">
-              <SearchBar />
-          </div>
+    <div className="searchPageContainer">
+      <img src={logo} className="logo" alt="logo" />
+      <div className="searchBarContainer">
+        <SearchBar />
       </div>
       <div className="events">
-        <h2>Events</h2>
-        
+        <h1>Events</h1>
+        <EventCard eventName="CSM" logo={sampleLogo} background={sampleBackground} location='VSLB' time="11:00PM" orgName="CSM"/>
       </div>
       <div className="orgs">
-        <h2>Organizations</h2>
-
+        <h1>Organizations</h1>
+        <OrgCard logo={sampleLogo} name="CSM"/>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import CalendarPage from "./pages/CalendarPage";
-import EventSearch from "./pages/SearchPage";
+import SearchPage from "./pages/SearchPage";
 import LoginPage from "./pages/LoginPage";
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/events" element={<EventSearch />} />
+        <Route path="/events" element={<SearchPage />} />
         <Route path="/calendar" element={<CalendarPage />} />
       </Routes>
     </Router>

@@ -1,15 +1,21 @@
-.wrapper {
-    background-color: white;
-    width: 100px;
-    height: 100px;
+.orgWrapper {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    height: 120px;
+    width: 120px; /* Fixed width for uniformity */
+    text-align: center; /* Center align text */
 }
 
-.wrapper img {
-    width: 25px;
+.orgLogo {
+    width: 80px;
     height: auto;
 }
 
 .orgTitle {
-    font-size: 30px;
+    font-size: 20px;
 }
