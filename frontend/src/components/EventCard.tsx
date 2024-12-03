@@ -28,9 +28,11 @@ interface EventCardProps {
               <img src={clockIcon} alt="clock icon" className="clockIcon" />
               {time}
             </div>
-            <img src={logo} alt="organization logo" className="orgLogo" />
-            <div className="orgName">
-              Organization: {orgName}
+        </div>
+        <div className="footer">
+          <img src={logo} alt="organization logo" className="orgLogo" />
+           <div className="orgName">
+            Organization: {orgName}
             </div>
         </div>
       </div>

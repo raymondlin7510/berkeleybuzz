@@ -1,11 +1,10 @@
-.orgWrapper {
+.orgCardWrapper {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Center elements horizontally */
     justify-content: center; /* Center elements vertically */
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
     height: 120px;
     width: 120px; /* Fixed width for uniformity */
     text-align: center; /* Center align text */

@@ -21,13 +21,27 @@ const SearchPage = () => {
       <div className="searchBarContainer">
         <SearchBar />
       </div>
-      <div className="events">
+      <div className="eventsWrapper">
         <h1>Events</h1>
+        <div className="events">
         <EventCard eventName="CSM" logo={sampleLogo} background={sampleBackground} location='VSLB' time="11:00PM" orgName="CSM"/>
+        <EventCard eventName="CSM" logo={sampleLogo} background={sampleBackground} location='VSLB' time="11:00PM" orgName="CSM"/>
+        </div>
       </div>
-      <div className="orgs">
+      <div className="orgsWrapper">
         <h1>Organizations</h1>
-        <OrgCard logo={sampleLogo} name="CSM"/>
+        <div className="orgs">
+          <OrgCard logo={sampleLogo} name="CSM"/>
+          <OrgCard logo={sampleLogo} name="CSM"/>
+          <OrgCard logo={sampleLogo} name="CSM"/>
+          <OrgCard logo={sampleLogo} name="CSM"/>
+          <OrgCard logo={sampleLogo} name="CSM"/>
+          <OrgCard logo={sampleLogo} name="CSM"/>
+          <OrgCard logo={sampleLogo} name="CSM"/>
+          <OrgCard logo={sampleLogo} name="CSM"/>
+          <OrgCard logo={sampleLogo} name="CSM"/>
+        </div>
+        
       </div>
     </div>
   );

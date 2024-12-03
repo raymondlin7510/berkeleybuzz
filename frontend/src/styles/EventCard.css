@@ -1,35 +1,55 @@
 .eventCardWrapper {
     display: flex;
     flex-direction: column;
-    height: 300px;
-    width: 350px;
+    width: 300px;
     font-size: 15px;
-    justify-content: center;
-    align-items: center;
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.textHolder {
-    text-align: center;
+    overflow: hidden;
 }
 
 .eventBackground {
-    height: 150px;
-    width: auto;
+    height: 150px; /* Adjust based on the image section's height */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.textHolder {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Add spacing between elements */
+    align-items: flex-start; /* Keeps the text aligned to the left edge of the container */
+    color: black;
+}
+
+.eventName {
+    font-weight: bold;
 }
 
 .mapIcon {
-    width: 20px;
+    width: 15px;
     height: auto;
 }
 
 .clockIcon {
-    width: 20px;
+    width: 15px;
     height: auto;
 }
 
+.footer {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 10px 20px; /* Spacing inside the footer */
+    display: flex;
+    gap: 10px;
+    border-top: 1px solid #ccc; /* Optional: adds a separating line */
+    width: 100%;
+}
+
 .orgLogo {
-    height: 20px;
-    width: auto;
+    height: 10px;
+    width: auto; 
 }
