@@ -1,0 +1,76 @@
+.calendarPageWrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: peachpuff;
+    width: 100%;
+}
+
+.calendarNavigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centers the buttons */
+    align-items: center; /* Vertically aligns the buttons */
+}
+
+
+.toggleButtons {
+    position: relative;
+    margin-right: auto;
+}
+
+.toggleButton {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toggleButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+.toggleButton.active {
+    background-color: #003f7f; /* Even darker blue to indicate active state */
+    border: 2px solid #0056b3;
+}
+
+.navigationButtons {
+    display: flex;
+    margin-left: auto; /* Push the navigation buttons to the right */
+}
+
+.navigationButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+.navigationButton:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navigationButton:active {
+    background-color: #003f7f;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
