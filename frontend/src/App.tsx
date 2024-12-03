@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import CalendarPage from "./pages/CalendarPage";
 import SearchPage from "./pages/SearchPage";
@@ -10,6 +10,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/" element={<Navigate to="/calendar" />} />
         <Route path="/events" element={<SearchPage />} />
         <Route path="/calendar" element={<CalendarPage />} />
       </Routes>
