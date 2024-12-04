@@ -1,11 +1,20 @@
-.wrapper {
-
+.loginWrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .inputWrapper {
-
+    display: flex;
+    flex-direction: column;
+    background-color: peachpuff;
+    padding: 40px;
 }
 
-.loginTitle {
-    
+.loginForm {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
 }

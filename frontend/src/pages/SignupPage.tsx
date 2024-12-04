@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/LoginPage.css';
+import '../styles/SignupPage.css';
   
-  const LoginPage = () => {
+  const SignupPage = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
@@ -13,7 +13,7 @@ import '../styles/LoginPage.css';
     return (
       <div className="loginWrapper">
         <div className="inputWrapper">
-          <h1 className="loginTitle">Login</h1>
+          <h1 className="loginTitle">Sign Up</h1>
           <form onSubmit={handleSubmit} className="loginForm">
             <label htmlFor="username">Username</label>
             <input
@@ -29,12 +29,20 @@ import '../styles/LoginPage.css';
               type="text"
               id="password"
               value={password}
+              placeholder="Enter your password"
+              required
+            />
+            <label htmlFor="password">Confirm Password</label>
+            <input
+              type="text"
+              id="password"
+              value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Enter your password"
               required
             />
             <button type="submit" className="login-button">
-              Login
+              Sign Up
             </button>
           </form>
         </div>
@@ -42,4 +50,4 @@ import '../styles/LoginPage.css';
     );
   };
 
-export default LoginPage;
+export default SignupPage;
