@@ -4,7 +4,6 @@ import mongoose from 'mongoose';
 const app = express();
 const port = 3000;
 
-const API_CALL = `https://api.openweathermap.org/data/2.5/forecast?q=Berkeley,California&appid=64b21c458c89d7437f1c82ce862daf58&units=imperial`;
 
 const forecastSchema = new mongoose.Schema({
   max: { type: Number, required: true },
