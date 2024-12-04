@@ -23,6 +23,11 @@ const Calendar = () => {
     }
   ];
 
+  const handleEventClick = (info: any) => {
+    //navigate(`/event/${info.event.id}`);
+    console.log('event clicked');
+  };
+
   return (
       <FullCalendar
         plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
@@ -33,6 +38,7 @@ const Calendar = () => {
           right: 'prev,next today',
         }}
         events={events}
+        eventClick={handleEventClick}
       />
   );
 };
