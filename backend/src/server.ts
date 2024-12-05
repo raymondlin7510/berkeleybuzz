@@ -13,9 +13,11 @@ const uri = "mongodb+srv://rubyalv:B2TkTyYI8xLrRj8T@berkeleybuzz.39vhg.mongodb.n
 const flyerSchema = new mongoose.Schema({
     name: { type: String, required: true },
     eventDate: { type: Date, required: true },
+    eventTime: { type: String, required: true },
     location: { type: String, required: true },
     description: { type: String, required: true },
-    organization: { type: String, required: true },
+    orgName: { type: String, required: true },
+    picture: { type: Image, required: true },
   }, {
     timestamps: true, // Automatically add `createdAt` and `updatedAt` fields
   });
@@ -25,7 +27,7 @@ const Flyer = mongoose.model('Flyer', flyerSchema);
 
 
 // GET route to fetch all flyers
-app.get('/flyers', async (req, res) => {
+app.get('/api/flyers', async (req, res) => {
     try {
       // Mongoose method to get all documents in the collection
       const flyers = await Flyer.find(); 
@@ -54,9 +56,9 @@ app.post('/', async (req, res) => {
         // Save new flyer to database
         const savedFlyer = await newFlyer.save();
         res.status(201).send({ message: 'Flyer created successfully', flyer: savedFlyer });
-    } catch (err) {
-        console.error('Error creating flyer:', err);
-        res.status(500).send({ message: 'Failed to create flyer', error: err.message });
+    } catch (error) {
+        console.error('Error creating flyer:', error);
+        res.status(500).send({ message: 'Failed to create flyer', error: error.message });
     }  
 });
 
@@ -71,9 +73,9 @@ app.delete('/flyers/:id', async (req, res) => {
             return res.status(404).send({ message: 'Flyer not found' });
         }
         res.status(200).send({ message: 'Flyer deleted successfully', flyer: deletedFlyer });
-    } catch (err) {
-        console.error('Error deleting flyer:', err);
-        res.status(500).send({ message: 'Failed to delete flyer', error: err.message });
+    } catch (error) {
+        console.error('Error deleting flyer:', error);
+        res.status(500).send({ message: 'Failed to delete flyer', error: error.message });
     }
 
 });
