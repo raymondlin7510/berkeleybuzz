@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../images/BerkeleyBuzzLogo.png';
 
 function Events() {
   const [events, setEvents] = useState([]);
@@ -21,7 +22,7 @@ function Events() {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl font-bold">Berkeley Events</h1>
+        <img src={logo} alt="Berkeley Buzz Logo" className="h-12" />
         <Link
           to="/add-event"
           className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
